@@ -3,8 +3,7 @@
 ## About this image
 
 This image contains the stuff needed to run a Siberian CMS SAE host.
-This image source can be find here 
-https://github.com/rylorin/docker-siberiancms
+The source [Dockerfile](https://github.com/rylorin/docker-siberiancms/blob/master/Dockerfile) and context for build are available on [docker-siberiancms GitHub](https://github.com/rylorin/docker-siberiancms).
 
 ## Installation
 
@@ -31,8 +30,6 @@ Docker compose example:
 	    image: rylorin/siberiancms:latest
 	    depends_on:
 	      - mysql
-	    networks:
-	      - default
 	    deploy:
 	      placement:
 	        constraints:
