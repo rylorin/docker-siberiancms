@@ -3,15 +3,18 @@
 ## About this image
 
 This image contains the stuff needed to run a Siberian CMS SAE host.
-The source [Dockerfile](https://github.com/rylorin/docker-siberiancms/blob/master/Dockerfile) and context for build are available on [docker-siberiancms GitHub](https://github.com/rylorin/docker-siberiancms).
+The source [Dockerfile](https://github.com/rylorin/docker-siberiancms/blob/master/Dockerfile) and context for build are available at [https://github.com/rylorin/docker-siberiancms](https://github.com/rylorin/docker-siberiancms).
+
+I based this image as much as possible on official images. I chose php:7.3-apache which is the closest from Siberian requirements. Then added java support, using a raw copy of official openjdk script. Last step added libraries and PHP modules required for Siberian CMS.
+
 
 ## Installation
 
 Installation should be straight forward by using this image in a docker stack.
 
 Docker compose example:
+
 	version: '3.7'
-	
 	services:
 	  mysql:
 	    image: mariadb:10.5
@@ -38,7 +41,6 @@ Docker compose example:
 	      - htdocs:/var/www/html:rw
 	    ports:
 	        - 80:80/tcp
-	
 	volumes:
 	  db:
 	  htdocs:
@@ -47,5 +49,5 @@ You may need to bind the server on a different port if 80 is already in use on y
 Then point your browser to your host.
 If you have a multihost installation (ex. swarm installation) you may need to add deploy constraints to always launch the containers or the same host or you will be unable to access your volumes content.
 
-It took me some time to build this image therefore I hope it may help you.
+It took me some time to build this image therefore I hope it will help you. Please don't hesitate to report problems.
 Have fun with Siberian CMS!
