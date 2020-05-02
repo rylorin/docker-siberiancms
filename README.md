@@ -1,5 +1,10 @@
 # Sibebrian CMS SAE docker image
 
+[![LICENSE: MIT](https://img.shields.io/github/license/rylorin/docker-siberiancms)](https://raw.githubusercontent.com/rylorin/docker-siberiancms/master/LICENSE)
+[![GitHub contributors](https://img.shields.io/github/contributors/rylorin/docker-siberiancms)](https://github.com/rylorin/docker-siberiancms/graphs/contributors)
+
+![Docker Automated build](https://img.shields.io/docker/automated/rylorin/siberiancms.svg) ![Docker Build Status](https://img.shields.io/docker/build/rylorin/siberiancms.svg) ![Docker Stars](https://img.shields.io/docker/stars/rylorin/siberiancms.svg) ![Docker Pulls](https://img.shields.io/docker/pulls/rylorin/siberiancms.svg)
+
 ## About this image
 
 This image contains the stuff needed to run a Siberian CMS SAE host.
